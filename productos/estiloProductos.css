@@ -1,0 +1,193 @@
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 80px;
+    padding: 0 100px;
+}
+
+.logo-container img {
+    height: 60px;
+    width: auto;
+    
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    margin-right: 30px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #fff;
+    background-color: #000;
+    font-size: 1.05rem;
+    border-radius: 50px;
+    padding: 5px;
+    transition: all 0.3s ease;
+  }
+
+
+
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+text-align: left;
+    background-image: url("/imagenescarritoInicio/carritoInicio2.png");
+    color: #FFF;
+    background-size: cover;
+  }
+
+
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .product-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .product-item {
+    position: relative;
+    display: inline-block;
+    margin: 100px;
+    width: 100%;
+    overflow: visible;
+  }
+
+  
+  
+  .product-item img {
+    display: block;
+    width: 70%;
+    object-fit: cover;
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .product-item:hover img {
+    filter: blur(12px);
+  }
+  
+  .product-item .product-info {
+    position: absolute;
+    top: 35%;
+    left:35%;
+    background-color: RG;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .product-item:hover .product-info {
+    opacity: 4;
+  }
+
+  .product-info{text-align: center;}
+  .product-info p {
+    font-size: 10px;
+    color: #FFF;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+  }
+  
+  .product-info h3 {
+    font-size: 20px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+    filter: invert();
+  }
+
+
+  .productoBuzo {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    }
+    
+    .productoBuzo .product-buzo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    }
+    
+    .productoBuzo .product-buzo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    
+    .productoBuzo .product-buzo .product-infos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 20px;
+    text-align: center;
+    }
+    
+    .productoBuzo .product-buzo:hover .product-infos {
+    opacity: 4;
+    }
+    
+    .productoBuzo .product-buzo .product-infos h3 {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    }
+    
+    .productoBuzo .product-buzo .product-infos p {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 10px;
+    }
+    
+    .productoBuzo .product-buzo:hover img {
+    filter: blur(5px);
+    }

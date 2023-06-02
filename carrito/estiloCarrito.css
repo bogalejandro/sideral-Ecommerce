@@ -1,0 +1,49 @@
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 80px;
+    padding: 0 100px;
+}
+
+.logo-container img {
+    height: 60px;
+    width: auto;
+    
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
+    margin-right: 30px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #fff;
+    background-color: #000;
+    font-size: 1.05rem;
+    border-radius: 50px;
+    padding: 5px;
+    transition: all 0.3s ease;
+  }
